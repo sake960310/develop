@@ -63,7 +63,6 @@ public class EcologyUtils {
             headersList.add(fieldNameMap.get(labelName));
         }
         System.out.println("上传附件的头部headersList=="+JSON.toJSONString(headersList));
-
         //配置文件档案数据选择框字段List
         List<String> selectList = (List<String>) map.get("listSelect");
         //记录选择框数据下标
@@ -81,7 +80,6 @@ public class EcologyUtils {
         }
         indexNum = new StringBuilder(",".contentEquals(indexNum) ? "" : indexNum.toString());
         System.out.println("indexNum==="+indexNum);
-
         return insertDataAction(exportType,tableName,headersList,datas,indexNum.toString(),selectMap,selectList,tableName.substring(tableName.indexOf("uf_")+3).toLowerCase());
     }
 
@@ -129,7 +127,7 @@ public class EcologyUtils {
                     long executionBaseDataTime = (endTime - startdataTime)/1000; // 计算程序执行时间
                     System.out.println("档案数据导入Action执行花费了 " + executionBaseDataTime + " 秒");
                 } catch (Exception e) {
-                    // Handle exception as needed
+                    e.printStackTrace();
                 }
                 batchDataList.clear();
                 //记录成功数据和失败数据

@@ -39,29 +39,32 @@ public class FileUploadServlet extends HttpServlet {
         //档案数据_文件上传
         excelUtils.saveFileToNAS(excelUtils.getSharePath(),fileData.getInputStream(),originalFileName);
         //档案数据处理
-        Map<String, Object> excelDataMap = excelUtils.readExcel(fileData.getInputStream());
-        long endExcelTime = System.currentTimeMillis(); // 记录程序结束时间
-        long executionExcelDataTime = (endExcelTime - startTime)/1000; // 计算程序执行时间
-        System.out.println("excel解析程序执行花费了 " + executionExcelDataTime + " 秒");
+        Map<String, Object> excelDataMap = excelUtils.readExcel(fileData.getInputStream(),exportType);
+        if(excelDataMap.get("failMode") != null){
+            response.getWriter().write(new JSONObject(excelDataMap).toString());
+        }else{
+            long endExcelTime = System.currentTimeMillis(); // 记录程序结束时间
+            long executionExcelDataTime = (endExcelTime - startTime)/1000; // 计算程序执行时间
+            System.out.println("excel解析程序执行花费了 " + executionExcelDataTime + " 秒");
 
-        JSONObject resultJsonObject = ecologyUtils.insertArchiveData(exportType,excelDataMap);
-        long endDataTime = System.currentTimeMillis(); // 记录程序结束时间
-        long executionDataTime = (endDataTime - endExcelTime)/1000; // 计算程序执行时间
-        System.out.println("数据导入程序执行花费了 " + executionDataTime + " 秒");
-
-        //档案附件_压缩文件处理
-        Map relationMap = resultJsonObject.getObject("resultRelationMap",Map.class);
-        if(archiveFile.getSize() > 0  && !relationMap.isEmpty()){
-            excelUtils.exportArchiveFile(archiveFile.getInputStream(),new File(excelUtils.getSharePath()+File.separator+excelUtils.getExportFilePath()),exportType,exportTableName,relationMap);
-        }
+            JSONObject resultJsonObject = ecologyUtils.insertArchiveData(exportType,excelDataMap);
+            long endDataTime = System.currentTimeMillis(); // 记录程序结束时间
+            long executionDataTime = (endDataTime - endExcelTime)/1000; // 计算程序执行时间
+            System.out.println("数据导入程序执行花费了 " + executionDataTime + " 秒");
+            //档案附件_压缩文件处理
+            Map relationMap = resultJsonObject.getObject("resultRelationMap",Map.class);
+            if(archiveFile.getSize() > 0  && !relationMap.isEmpty()){
+                excelUtils.exportArchiveFile(archiveFile.getInputStream(),new File(excelUtils.getSharePath()+File.separator+excelUtils.getExportFilePath()),exportType,exportTableName,relationMap);
+            }
 //        if(archiveFile.getSize() > 0){
 //            excelUtils.exportArchiveFile(archiveFile.getInputStream(),new File(excelUtils.getSharePath()+File.separator+excelUtils.getExportFilePath()),exportType,exportTableName);
 //        }
-        long endTime = System.currentTimeMillis(); // 记录程序结束时间
-        long executionTime = (endTime - endDataTime)/1000; // 计算程序执行时间
-        System.out.println("附件程序执行花费了 " + executionTime + " 秒");
+            long endTime = System.currentTimeMillis(); // 记录程序结束时间
+            long executionTime = (endTime - endDataTime)/1000; // 计算程序执行时间
+            System.out.println("附件程序执行花费了 " + executionTime + " 秒");
+            response.getWriter().write(String.valueOf(resultJsonObject));
+        }
 
-        response.getWriter().write(String.valueOf(resultJsonObject));
         //response.sendRedirect("http://172.21.61.169:8080/archiveSystem/jsp/upload.jsp");
     }
 }

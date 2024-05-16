@@ -200,6 +200,7 @@
             formData.append("fileData", $("#dataFile")[0].files[0]);
             formData.append("archiveFile", $("#zipFile")[0].files[0]);
             formData.append("exportType", $("#exportType").val());
+            debugger;
             $.ajax({
                 url: "/archiveSystem/upload",
                 type: "POST",
@@ -209,21 +210,29 @@
                 success: function(response) {
                     // 请求成功处理逻辑
                     $("#submitBtn").prop("disabled", false).text("上传提交"); // 恢复按钮状态
+                    debugger;
                     var result = JSON.parse(response);
-                    var successData = result.successData;
-                    var successBaseData = result.successBaseData;
-                    var failData = result.failData;
-                    var failBaseData = result.failBaseData;
-                    var failDataName = result.failDataName;
-                    var failDataUrl = $("#failDataUrl");
-                    failDataUrl.attr("href","download?fileName="+failDataName);
-                    failDataUrl.text(failDataName);
-                    if(failData > 0){
-                        $("#failData").show();
+                    var content = "";
+                    var failMode = result.failMode;
+                    if(failMode === "1"){
+                        content = "导入模版错误，请重新下载导入模版！";
+                    }else{
+                        var successData = result.successData;
+                        var successBaseData = result.successBaseData;
+                        var failData = result.failData;
+                        var failBaseData = result.failBaseData;
+                        var failDataName = result.failDataName;
+                        content = "档案数据:成功插入：" + successData+" 条,失败 "+failData+"条;\r基表数据：成功插入："+ successBaseData+" 条,失败 "+failBaseData+"条。";
+                        var failDataUrl = $("#failDataUrl");
+                        failDataUrl.attr("href","download?fileName="+failDataName);
+                        failDataUrl.text(failDataName);
+                        if(failData > 0){
+                            $("#failData").show();
+                        }
                     }
                     $('#archiveFile').val('');
                     $('#fileData').val('');
-                    $('#myModalContent').text("档案数据:成功插入：" + successData+" 条,失败 "+failData+"条;\r基表数据：成功插入："+ successBaseData+" 条,失败 "+failBaseData+"条。");
+                    $('#myModalContent').text(content);
                     $('#myModal').show();
                 },
                 error: function() {

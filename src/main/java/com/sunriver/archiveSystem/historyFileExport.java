@@ -35,7 +35,7 @@ public class historyFileExport extends HttpServlet {
         Part fileData = request.getPart("fileData");//档案基础数据
         InputStream fileContent = fileData.getInputStream();
         //1.获取附件内容
-        Map<String, Object> excelDataMap = excelUtils.readExcel(fileContent);
+        Map<String, Object> excelDataMap = excelUtils.readExcel(fileContent,"");
         @SuppressWarnings("unchecked")
         List<List<Object>> data = (List<List<Object>>) excelDataMap.get("data");
         Iterator<List<Object>> dataItr = data.iterator();

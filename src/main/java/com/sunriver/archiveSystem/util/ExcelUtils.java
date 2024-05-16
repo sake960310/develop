@@ -43,7 +43,7 @@ public class ExcelUtils {
      * @param fileContent 文件内容
      * @return 内容map
      */
-    public Map<String, Object> readExcel(InputStream fileContent) throws IOException {
+    public Map<String, Object> readExcel(InputStream fileContent,String exportType) throws IOException {
         // 创建一个Map来存储Excel的表头、表头列数和表格数据内容
         Map<String, Object> excelData = new HashMap<>();
         // Excel表头
@@ -68,7 +68,24 @@ public class ExcelUtils {
 //                        System.out.println("第"+rowNum+"行，cell::"+colNum+"列："+cell.getStringCellValue());
                     //表头信息记录
                     headers.add(cell.getStringCellValue());
+
                 }
+            }
+        }
+        //校验模版是否正确
+        if(!exportType.isEmpty()){
+            Map<String, Object> exportConf = getExportConf(exportType);
+            List<String> headersConfList = (List<String>) exportConf.get("list");
+            String tableName = (String) exportConf.get("tableName");
+            Map<String, String> fieldLabelNameMap = new JDBCUtils().getFieldLabelName(tableName, headersConfList);
+            List<String> headersList = new ArrayList<>(fieldLabelNameMap.values());
+            boolean isEqual = headersList.size() == headers.size() && new HashSet<>(headersList).containsAll(headers);
+            if (!isEqual){
+                System.out.println("使用了错误导入模版！");
+                excelData.put("failMode","1");
+                workbook.close();
+                fileContent.close();
+                return excelData;
             }
         }
 
