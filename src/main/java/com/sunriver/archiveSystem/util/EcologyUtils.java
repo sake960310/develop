@@ -39,22 +39,8 @@ public class EcologyUtils {
     private static final String baseTable = excelUtils.getBaseTableName();
 
     public static void main(String[] args) {
-        String jsonString = "{\"mainTable\":\"Data.mainTable data index:2 字段:DH为必填项，不能为空\",\"dataIndex\":2,\"originaldata\":\"{\\\"mainTable\\\":{\\\"FLH\\\":\\\"人力\\\",\\\"DH\\\":\\\"\\\",\\\"year\\\":\\\"2024\\\",\\\"GDFS\\\":\\\"1\\\",\\\"title\\\":\\\"测试基建档案\\\",\\\"BGQX\\\":\\\"10年\\\",\\\"SQR\\\":\\\"阮秋霜\\\",\\\"DALX\\\":\\\"基建档案\\\",\\\"JCR\\\":\\\"阮秋霜\\\",\\\"BZ\\\":\\\"备注111\\\",\\\"CFWZ\\\":\\\"\\\",\\\"JCRQ\\\":\\\"45422\\\",\\\"page\\\":\\\"1\\\",\\\"ZRR\\\":\\\"阮秋霜\\\",\\\"SQRQ\\\":\\\"45422\\\",\\\"GDRQ\\\":\\\"45422\\\",\\\"MJ\\\":\\\"普通\\\",\\\"QZH\\\":\\\"QZH\\\"},\\\"operationinfo\\\":{\\\"operator\\\":\\\"1\\\"}}\",\"status\":\"3\"}";
-        JSONObject jsonObject = JSON.parseObject(jsonString);
-        String dataJsonString = jsonObject.getString("datajson");
-        JSONObject dataJsonObject = JSON.parseObject(dataJsonString);
-        String data = dataJsonObject.getString("data");
-        JSONArray dataArray = JSON.parseArray(data);
-
-        for (int i = 0; i < dataArray.size(); i++) {
-            JSONObject item = dataArray.getJSONObject(i);
-            String billId = item.getString("billid");
-            System.out.println("billid: " + billId);
-            String originaldata = item.getString("originaldata");
-            JSONObject mainTable = JSON.parseObject(originaldata).getJSONObject("mainTable");
-
-            System.out.println("FLH: " + mainTable.get("FLH"));
-        }
+        List<String> strings = List.of("1111", "2222", "3213", "123");
+        System.out.println(JSON.toJSONString(strings));
     }
 
     /**
@@ -70,23 +56,33 @@ public class EcologyUtils {
 
         Map<String,Object> map = excelUtils.getExportConf(exportType);
         String tableName = map.get("tableName").toString();
-        List<String> list = (List<String>) map.get("list");
-        //3.2 获取选择框值的下标
+        //导入数据字段keyList   将headersList 转换成数据库字段
+        List<String> headersList = new ArrayList<>();
+        Map<String, String> fieldNameMap = jdbcUtils.getFieldName(tableName, headers);
+        for (String labelName : headers) {
+            headersList.add(fieldNameMap.get(labelName));
+        }
+        System.out.println("上传附件的头部headersList=="+JSON.toJSONString(headersList));
+
+        //配置文件档案数据选择框字段List
         List<String> selectList = (List<String>) map.get("listSelect");
-        //3.1 获得键值对
+        //记录选择框数据下标
         StringBuilder indexNum = new StringBuilder(",");
         //获取选择框键值对
-        Connection conn = JDBCUtils.getConnection();
         Map<String,Map<String,Integer>> selectMap = new HashMap<>();
         //获取导入档案选择框字段位置及实际值
-        for (String selectKey : selectList) {
-            indexNum.append(list.indexOf(selectKey)).append(",");
-            selectMap.put(selectKey, jdbcUtils.getSelectActValue(conn, tableName, selectKey));
+        if(!selectList.isEmpty()){
+            Connection conn = JDBCUtils.getConnection();
+            for (String selectKey : selectList) {
+                indexNum.append(headersList.indexOf(selectKey)).append(",");
+                selectMap.put(selectKey, jdbcUtils.getSelectActValue(conn, tableName, selectKey));
+            }
+            JDBCUtils.closeAll(null,null,conn);
         }
-        JDBCUtils.closeAll(null,null,conn);
         indexNum = new StringBuilder(",".contentEquals(indexNum) ? "" : indexNum.toString());
+        System.out.println("indexNum==="+indexNum);
 
-        return insertDataAction(exportType,tableName,list,datas,indexNum.toString(),selectMap,selectList,tableName.substring(tableName.indexOf("uf_")+3).toLowerCase());
+        return insertDataAction(exportType,tableName,headersList,datas,indexNum.toString(),selectMap,selectList,tableName.substring(tableName.indexOf("uf_")+3).toLowerCase());
     }
 
     /**
@@ -138,6 +134,7 @@ public class EcologyUtils {
                 batchDataList.clear();
                 //记录成功数据和失败数据
                 String resultString = resultStringBuilder.toString();
+                System.out.println("insertDataAction()--resultString=="+resultString);
                 resultStringBuilder.setLength(0);
                 //获取档号与档案关联关系
                 resultRelationMap.putAll(getResultRelationMap(resultString));

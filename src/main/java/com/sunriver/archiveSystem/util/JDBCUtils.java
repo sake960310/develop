@@ -269,7 +269,42 @@ public class JDBCUtils {
             while (resultSet.next()) {
                 map.put(resultSet.getString("fieldname"),resultSet.getString("labelname"));
             }
-            closeAll(resultSet,statement,null);
+            closeAll(resultSet,statement,conn);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return map;
+    }
+
+    /**
+     *  获取字段-数据库名   键值对
+     * @param tablename 表名
+     * @param LabelNameList  字段显示名集
+     */
+    public Map<String,String> getFieldName(String tablename, List<String> LabelNameList){
+        Connection conn = getConnection();
+        String sql = " select  distinct m.INDEXID indexid,m.LABELNAME labelname,n.fieldname fieldname from HtmlLabelInfo m left join workflow_billfield n on m.INDEXID=n.fieldlabel where m.INDEXID in " +
+                "(select fieldlabel from workflow_billfield where billid=(select id from workflow_bill where tablename=? ) and m.LABELNAME in (%?) ) ";
+        Map<String,String> map = new HashMap<>();
+        String temp = "?";
+        for (int i = 1; i < LabelNameList.size(); i++) {
+            temp+=",?";
+        }
+        sql = sql.replace("%?",temp);
+        try {
+            PreparedStatement statement = conn.prepareStatement(sql);
+            statement.setString(1, tablename);//表名
+            int index = 2;
+            Iterator<String> fieldnameIterator = LabelNameList.iterator();
+            while(fieldnameIterator.hasNext()){
+                statement.setString(index, fieldnameIterator.next().replace("$1",""));//表名
+                index++;
+            }
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                map.put(resultSet.getString("labelname"),resultSet.getString("fieldname"));
+            }
+            closeAll(resultSet,statement,conn);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

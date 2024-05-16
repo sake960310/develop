@@ -173,8 +173,6 @@
                     alert('请上传zip格式的文件'); // 文件格式不符合要求，弹出提示
                     $(this).val(''); // 清空fileData文件输入框的值
                 }
-            } else {
-                $('#submitBtn').attr('disabled', true); // 文件为空，添加disabled属性，禁止点击按钮
             }
         });
         //类型选择触发模版下载名称变更
