@@ -62,7 +62,6 @@ public class EcologyUtils {
         for (String labelName : headers) {
             headersList.add(fieldNameMap.get(labelName));
         }
-        System.out.println("上传附件的头部headersList=="+JSON.toJSONString(headersList));
         //配置文件档案数据选择框字段List
         List<String> selectList = (List<String>) map.get("listSelect");
         //记录选择框数据下标
@@ -79,7 +78,7 @@ public class EcologyUtils {
             JDBCUtils.closeAll(null,null,conn);
         }
         indexNum = new StringBuilder(",".contentEquals(indexNum) ? "" : indexNum.toString());
-        System.out.println("indexNum==="+indexNum);
+//        System.out.println("indexNum==="+indexNum);
         return insertDataAction(exportType,tableName,headersList,datas,indexNum.toString(),selectMap,selectList,tableName.substring(tableName.indexOf("uf_")+3).toLowerCase());
     }
 
@@ -132,7 +131,7 @@ public class EcologyUtils {
                 batchDataList.clear();
                 //记录成功数据和失败数据
                 String resultString = resultStringBuilder.toString();
-                System.out.println("insertDataAction()--resultString=="+resultString);
+//                System.out.println("insertDataAction()--resultString=="+resultString);
                 resultStringBuilder.setLength(0);
                 //获取档号与档案关联关系
                 resultRelationMap.putAll(getResultRelationMap(resultString));

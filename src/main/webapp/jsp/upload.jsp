@@ -245,6 +245,8 @@
         // 点击确定按钮
         $("#confirmBtn").click(function() {
             $('#myModal').hide();
+            $('#dataFile').val('');
+            $('#zipFile').val('');
         })
 
         $("#failDataUrl").click(function() {

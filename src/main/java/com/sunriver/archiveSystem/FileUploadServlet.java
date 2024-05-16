@@ -62,6 +62,8 @@ public class FileUploadServlet extends HttpServlet {
             long endTime = System.currentTimeMillis(); // 记录程序结束时间
             long executionTime = (endTime - endDataTime)/1000; // 计算程序执行时间
             System.out.println("附件程序执行花费了 " + executionTime + " 秒");
+            long totalTime = (endTime - startTime)/1000; // 计算程序执行时间
+            System.out.println("全程 执行花费了 " + totalTime + " 秒");
             response.getWriter().write(String.valueOf(resultJsonObject));
         }
 
