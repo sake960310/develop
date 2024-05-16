@@ -1,0 +1,697 @@
+07-May-2024 10:13:46.112 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.88
+07-May-2024 10:13:46.123 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Apr 9 2024 13:22:30 UTC
+07-May-2024 10:13:46.123 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.88.0
+07-May-2024 10:13:46.124 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+07-May-2024 10:13:46.124 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+07-May-2024 10:13:46.124 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+07-May-2024 10:13:46.125 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\WorkSpace\JDK\jdk-22.0.1
+07-May-2024 10:13:46.125 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    22.0.1+8-16
+07-May-2024 10:13:46.125 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+07-May-2024 10:13:46.126 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 10:13:46.126 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 10:13:46.154 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+07-May-2024 10:13:46.154 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+07-May-2024 10:13:46.155 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+07-May-2024 10:13:46.156 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+07-May-2024 10:13:46.156 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-May-2024 10:13:46.156 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 10:13:46.156 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 10:13:46.158 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\WorkSpace\IdeaProjects\arvhiceSystem\temp
+07-May-2024 10:13:46.159 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\logging.properties
+07-May-2024 10:13:46.160 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2024 10:13:46.161 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\lib\idea_rt.jar=51394:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\bin
+07-May-2024 10:13:46.162 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+07-May-2024 10:13:46.162 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stdout.encoding=UTF-8
+07-May-2024 10:13:46.162 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stderr.encoding=UTF-8
+07-May-2024 10:13:46.178 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[1.3.0]。
+07-May-2024 10:13:46.179 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+07-May-2024 10:13:46.179 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+07-May-2024 10:13:46.230 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.13 30 Jan 2024]
+07-May-2024 10:13:47.240 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+07-May-2024 10:13:47.291 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[2135]毫秒内初始化
+07-May-2024 10:13:47.452 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+07-May-2024 10:13:47.453 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.88]
+07-May-2024 10:13:47.499 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]。
+07-May-2024 10:13:49.215 警告 [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion 未知版本字符串 [5.0]。将使用默认版本。
+07-May-2024 10:13:57.269 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+07-May-2024 10:13:57.458 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]的部署已在[9,956]ms内完成
+07-May-2024 10:13:57.466 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+07-May-2024 10:13:57.523 信息 [main] org.apache.catalina.startup.Catalina.start [10228]毫秒后服务器启动
+07-May-2024 10:20:18.984 警告 [http-nio-8080-exec-7] org.apache.catalina.connector.Request.recycle Failed to deleted temporary file used for part [archiveFile]
+	java.io.UncheckedIOException: Cannot delete D:\WorkSpace\IdeaProjects\arvhiceSystem\work\Catalina\localhost\arvhiceSystem\upload_26c8bd3a_18a1_4845_ad35_db906578a4c1_00000003.tmp
+		at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:429)
+		at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+		at org.apache.catalina.connector.Request.recycle(Request.java:475)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:424)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+	Caused by: java.io.IOException: Cannot delete D:\WorkSpace\IdeaProjects\arvhiceSystem\work\Catalina\localhost\arvhiceSystem\upload_26c8bd3a_18a1_4845_ad35_db906578a4c1_00000003.tmp
+		... 13 more
+07-May-2024 10:23:16.526 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+07-May-2024 10:23:16.532 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+07-May-2024 10:23:16.605 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+07-May-2024 10:23:16.622 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+07-May-2024 10:23:28.374 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.88
+07-May-2024 10:23:28.385 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Apr 9 2024 13:22:30 UTC
+07-May-2024 10:23:28.386 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.88.0
+07-May-2024 10:23:28.386 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+07-May-2024 10:23:28.387 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+07-May-2024 10:23:28.387 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+07-May-2024 10:23:28.387 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\WorkSpace\JDK\jdk-22.0.1
+07-May-2024 10:23:28.388 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    22.0.1+8-16
+07-May-2024 10:23:28.388 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+07-May-2024 10:23:28.389 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 10:23:28.389 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 10:23:28.421 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+07-May-2024 10:23:28.422 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+07-May-2024 10:23:28.422 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+07-May-2024 10:23:28.422 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+07-May-2024 10:23:28.422 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-May-2024 10:23:28.423 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 10:23:28.423 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 10:23:28.423 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\WorkSpace\IdeaProjects\arvhiceSystem\temp
+07-May-2024 10:23:28.424 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\logging.properties
+07-May-2024 10:23:28.424 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2024 10:23:28.424 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\lib\idea_rt.jar=53457:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\bin
+07-May-2024 10:23:28.424 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+07-May-2024 10:23:28.425 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stdout.encoding=UTF-8
+07-May-2024 10:23:28.425 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stderr.encoding=UTF-8
+07-May-2024 10:23:28.439 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[1.3.0]。
+07-May-2024 10:23:28.439 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+07-May-2024 10:23:28.440 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+07-May-2024 10:23:28.506 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.13 30 Jan 2024]
+07-May-2024 10:23:29.489 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+07-May-2024 10:23:29.540 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[1981]毫秒内初始化
+07-May-2024 10:23:29.700 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+07-May-2024 10:23:29.700 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.88]
+07-May-2024 10:23:29.732 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]。
+07-May-2024 10:23:31.053 警告 [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion 未知版本字符串 [5.0]。将使用默认版本。
+07-May-2024 10:23:41.916 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+07-May-2024 10:23:42.145 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]的部署已在[12,408]ms内完成
+07-May-2024 10:23:42.154 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+07-May-2024 10:23:42.231 信息 [main] org.apache.catalina.startup.Catalina.start [12687]毫秒后服务器启动
+07-May-2024 10:24:43.327 警告 [http-nio-8080-exec-3] org.apache.catalina.connector.Request.recycle Failed to deleted temporary file used for part [archiveFile]
+	java.io.UncheckedIOException: Cannot delete D:\WorkSpace\IdeaProjects\arvhiceSystem\work\Catalina\localhost\arvhiceSystem\upload_d4af6ee2_c62d_4caa_9cbd_40a71e84525f_00000002.tmp
+		at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:429)
+		at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+		at org.apache.catalina.connector.Request.recycle(Request.java:475)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:424)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+	Caused by: java.io.IOException: Cannot delete D:\WorkSpace\IdeaProjects\arvhiceSystem\work\Catalina\localhost\arvhiceSystem\upload_d4af6ee2_c62d_4caa_9cbd_40a71e84525f_00000002.tmp
+		... 13 more
+07-May-2024 10:26:02.723 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+07-May-2024 10:26:02.726 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+07-May-2024 10:26:02.748 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+07-May-2024 10:26:02.764 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+07-May-2024 10:26:07.207 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.88
+07-May-2024 10:26:07.219 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Apr 9 2024 13:22:30 UTC
+07-May-2024 10:26:07.220 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.88.0
+07-May-2024 10:26:07.220 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+07-May-2024 10:26:07.221 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+07-May-2024 10:26:07.221 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+07-May-2024 10:26:07.221 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\WorkSpace\JDK\jdk-22.0.1
+07-May-2024 10:26:07.222 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    22.0.1+8-16
+07-May-2024 10:26:07.222 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+07-May-2024 10:26:07.223 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 10:26:07.224 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 10:26:07.251 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+07-May-2024 10:26:07.251 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+07-May-2024 10:26:07.251 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+07-May-2024 10:26:07.252 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+07-May-2024 10:26:07.253 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-May-2024 10:26:07.253 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 10:26:07.253 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 10:26:07.254 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\WorkSpace\IdeaProjects\arvhiceSystem\temp
+07-May-2024 10:26:07.254 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\logging.properties
+07-May-2024 10:26:07.255 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2024 10:26:07.256 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\lib\idea_rt.jar=59958:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\bin
+07-May-2024 10:26:07.256 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+07-May-2024 10:26:07.257 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stdout.encoding=UTF-8
+07-May-2024 10:26:07.257 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stderr.encoding=UTF-8
+07-May-2024 10:26:07.268 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[1.3.0]。
+07-May-2024 10:26:07.269 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+07-May-2024 10:26:07.270 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+07-May-2024 10:26:07.296 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.13 30 Jan 2024]
+07-May-2024 10:26:08.238 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+07-May-2024 10:26:08.299 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[1811]毫秒内初始化
+07-May-2024 10:26:08.434 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+07-May-2024 10:26:08.434 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.88]
+07-May-2024 10:26:08.479 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]。
+07-May-2024 10:26:09.716 警告 [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion 未知版本字符串 [5.0]。将使用默认版本。
+07-May-2024 10:26:17.571 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+07-May-2024 10:26:17.756 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]的部署已在[9,273]ms内完成
+07-May-2024 10:26:17.763 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+07-May-2024 10:26:17.817 信息 [main] org.apache.catalina.startup.Catalina.start [9513]毫秒后服务器启动
+07-May-2024 10:26:38.757 警告 [http-nio-8080-exec-4] org.apache.catalina.connector.Request.recycle Failed to deleted temporary file used for part [archiveFile]
+	java.io.UncheckedIOException: Cannot delete D:\WorkSpace\IdeaProjects\arvhiceSystem\work\Catalina\localhost\arvhiceSystem\upload_21349dbd_8168_4afb_a368_5066aa156972_00000002.tmp
+		at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:429)
+		at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+		at org.apache.catalina.connector.Request.recycle(Request.java:475)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:424)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+	Caused by: java.io.IOException: Cannot delete D:\WorkSpace\IdeaProjects\arvhiceSystem\work\Catalina\localhost\arvhiceSystem\upload_21349dbd_8168_4afb_a368_5066aa156972_00000002.tmp
+		... 13 more
+07-May-2024 10:29:26.884 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+07-May-2024 10:29:26.887 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+07-May-2024 10:29:26.910 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+07-May-2024 10:29:26.916 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+07-May-2024 10:29:35.630 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.88
+07-May-2024 10:29:35.642 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Apr 9 2024 13:22:30 UTC
+07-May-2024 10:29:35.643 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.88.0
+07-May-2024 10:29:35.644 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+07-May-2024 10:29:35.645 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+07-May-2024 10:29:35.645 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+07-May-2024 10:29:35.645 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\WorkSpace\JDK\jdk-22.0.1
+07-May-2024 10:29:35.647 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    22.0.1+8-16
+07-May-2024 10:29:35.647 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+07-May-2024 10:29:35.647 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 10:29:35.648 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 10:29:35.675 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+07-May-2024 10:29:35.675 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+07-May-2024 10:29:35.676 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+07-May-2024 10:29:35.676 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+07-May-2024 10:29:35.677 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-May-2024 10:29:35.677 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 10:29:35.677 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 10:29:35.678 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\WorkSpace\IdeaProjects\arvhiceSystem\temp
+07-May-2024 10:29:35.678 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\logging.properties
+07-May-2024 10:29:35.679 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2024 10:29:35.679 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\lib\idea_rt.jar=45461:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\bin
+07-May-2024 10:29:35.679 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+07-May-2024 10:29:35.679 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stdout.encoding=UTF-8
+07-May-2024 10:29:35.680 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stderr.encoding=UTF-8
+07-May-2024 10:29:35.691 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[1.3.0]。
+07-May-2024 10:29:35.692 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+07-May-2024 10:29:35.692 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+07-May-2024 10:29:35.717 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.13 30 Jan 2024]
+07-May-2024 10:29:36.719 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+07-May-2024 10:29:36.769 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[1820]毫秒内初始化
+07-May-2024 10:29:36.891 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+07-May-2024 10:29:36.891 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.88]
+07-May-2024 10:29:36.919 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]。
+07-May-2024 10:29:38.317 警告 [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion 未知版本字符串 [5.0]。将使用默认版本。
+07-May-2024 10:29:49.652 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+07-May-2024 10:29:49.901 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]的部署已在[12,976]ms内完成
+07-May-2024 10:29:49.910 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+07-May-2024 10:29:49.965 信息 [main] org.apache.catalina.startup.Catalina.start [13194]毫秒后服务器启动
+07-May-2024 10:30:09.665 警告 [http-nio-8080-exec-1] org.apache.catalina.connector.Request.recycle Failed to deleted temporary file used for part [fileData]
+	java.io.UncheckedIOException: Cannot delete D:\WorkSpace\IdeaProjects\arvhiceSystem\work\Catalina\localhost\arvhiceSystem\upload_a595c164_4d06_4197_8e5a_feb6342f3691_00000001.tmp
+		at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:429)
+		at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+		at org.apache.catalina.connector.Request.recycle(Request.java:475)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:424)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+	Caused by: java.io.IOException: Cannot delete D:\WorkSpace\IdeaProjects\arvhiceSystem\work\Catalina\localhost\arvhiceSystem\upload_a595c164_4d06_4197_8e5a_feb6342f3691_00000001.tmp
+		... 13 more
+07-May-2024 10:30:09.668 警告 [http-nio-8080-exec-1] org.apache.catalina.connector.Request.recycle Failed to deleted temporary file used for part [archiveFile]
+	java.io.UncheckedIOException: Cannot delete D:\WorkSpace\IdeaProjects\arvhiceSystem\work\Catalina\localhost\arvhiceSystem\upload_a595c164_4d06_4197_8e5a_feb6342f3691_00000002.tmp
+		at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:429)
+		at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+		at org.apache.catalina.connector.Request.recycle(Request.java:475)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:424)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1786)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+	Caused by: java.io.IOException: Cannot delete D:\WorkSpace\IdeaProjects\arvhiceSystem\work\Catalina\localhost\arvhiceSystem\upload_a595c164_4d06_4197_8e5a_feb6342f3691_00000002.tmp
+		... 13 more
+07-May-2024 10:31:12.937 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+07-May-2024 10:31:12.940 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+07-May-2024 10:31:12.961 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+07-May-2024 10:31:12.978 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+07-May-2024 10:31:20.632 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.88
+07-May-2024 10:31:20.646 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Apr 9 2024 13:22:30 UTC
+07-May-2024 10:31:20.647 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.88.0
+07-May-2024 10:31:20.647 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+07-May-2024 10:31:20.648 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+07-May-2024 10:31:20.648 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+07-May-2024 10:31:20.652 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\WorkSpace\JDK\jdk-22.0.1
+07-May-2024 10:31:20.653 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    22.0.1+8-16
+07-May-2024 10:31:20.654 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+07-May-2024 10:31:20.654 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 10:31:20.655 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 10:31:20.695 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+07-May-2024 10:31:20.696 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+07-May-2024 10:31:20.697 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+07-May-2024 10:31:20.698 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+07-May-2024 10:31:20.699 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-May-2024 10:31:20.700 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 10:31:20.700 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 10:31:20.700 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\WorkSpace\IdeaProjects\arvhiceSystem\temp
+07-May-2024 10:31:20.701 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\logging.properties
+07-May-2024 10:31:20.701 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2024 10:31:20.701 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\lib\idea_rt.jar=24802:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\bin
+07-May-2024 10:31:20.702 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+07-May-2024 10:31:20.702 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stdout.encoding=UTF-8
+07-May-2024 10:31:20.703 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stderr.encoding=UTF-8
+07-May-2024 10:31:20.718 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[1.3.0]。
+07-May-2024 10:31:20.742 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+07-May-2024 10:31:20.743 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+07-May-2024 10:31:20.770 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.13 30 Jan 2024]
+07-May-2024 10:31:21.929 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+07-May-2024 10:31:21.992 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[2653]毫秒内初始化
+07-May-2024 10:31:22.141 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+07-May-2024 10:31:22.142 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.88]
+07-May-2024 10:31:22.177 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]。
+07-May-2024 10:31:23.524 警告 [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion 未知版本字符串 [5.0]。将使用默认版本。
+07-May-2024 10:31:32.673 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+07-May-2024 10:31:32.869 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]的部署已在[10,688]ms内完成
+07-May-2024 10:31:32.875 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+07-May-2024 10:31:32.936 信息 [main] org.apache.catalina.startup.Catalina.start [10940]毫秒后服务器启动
+07-May-2024 10:51:10.827 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+07-May-2024 10:51:10.862 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+07-May-2024 10:51:11.477 警告 [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web应用程序 [arvhiceSystem] 注册了JDBC驱动程序 [oracle.jdbc.OracleDriver]，但在Web应用程序停止时无法注销它。 为防止内存泄漏，JDBC驱动程序已被强制取消注册。
+07-May-2024 10:51:11.482 警告 [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Web应用程序[arvhiceSystem]似乎启动了一个名为[Timer-0]的线程，但未能停止它。这很可能会造成内存泄漏。线程的堆栈跟踪：[
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:375)
+ java.base/java.lang.Object.wait(Object.java:348)
+ java.base/java.util.TimerThread.mainLoop(Timer.java:542)
+ java.base/java.util.TimerThread.run(Timer.java:521)]
+07-May-2024 10:51:11.558 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+07-May-2024 10:51:11.588 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+07-May-2024 10:51:27.054 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.88
+07-May-2024 10:51:27.063 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Apr 9 2024 13:22:30 UTC
+07-May-2024 10:51:27.064 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.88.0
+07-May-2024 10:51:27.064 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+07-May-2024 10:51:27.065 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+07-May-2024 10:51:27.065 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+07-May-2024 10:51:27.065 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\WorkSpace\JDK\jdk-22.0.1
+07-May-2024 10:51:27.066 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    22.0.1+8-16
+07-May-2024 10:51:27.066 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+07-May-2024 10:51:27.067 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 10:51:27.067 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 10:51:27.093 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+07-May-2024 10:51:27.094 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+07-May-2024 10:51:27.094 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+07-May-2024 10:51:27.094 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+07-May-2024 10:51:27.095 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-May-2024 10:51:27.095 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 10:51:27.095 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 10:51:27.096 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\WorkSpace\IdeaProjects\arvhiceSystem\temp
+07-May-2024 10:51:27.097 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\logging.properties
+07-May-2024 10:51:27.097 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2024 10:51:27.097 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\lib\idea_rt.jar=42169:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\bin
+07-May-2024 10:51:27.098 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+07-May-2024 10:51:27.098 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stdout.encoding=UTF-8
+07-May-2024 10:51:27.098 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stderr.encoding=UTF-8
+07-May-2024 10:51:27.113 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[1.3.0]。
+07-May-2024 10:51:27.114 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+07-May-2024 10:51:27.114 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+07-May-2024 10:51:27.161 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.13 30 Jan 2024]
+07-May-2024 10:51:28.248 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+07-May-2024 10:51:28.287 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[1968]毫秒内初始化
+07-May-2024 10:51:28.430 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+07-May-2024 10:51:28.431 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.88]
+07-May-2024 10:51:28.467 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]。
+07-May-2024 10:51:29.824 警告 [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion 未知版本字符串 [5.0]。将使用默认版本。
+07-May-2024 10:51:39.028 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+07-May-2024 10:51:39.252 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]的部署已在[10,782]ms内完成
+07-May-2024 10:51:39.261 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+07-May-2024 10:51:39.310 信息 [main] org.apache.catalina.startup.Catalina.start [11020]毫秒后服务器启动
+07-May-2024 10:56:18.264 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+07-May-2024 10:56:18.266 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+07-May-2024 10:56:18.386 警告 [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web应用程序 [arvhiceSystem] 注册了JDBC驱动程序 [oracle.jdbc.OracleDriver]，但在Web应用程序停止时无法注销它。 为防止内存泄漏，JDBC驱动程序已被强制取消注册。
+07-May-2024 10:56:18.386 警告 [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Web应用程序[arvhiceSystem]似乎启动了一个名为[Timer-0]的线程，但未能停止它。这很可能会造成内存泄漏。线程的堆栈跟踪：[
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:375)
+ java.base/java.lang.Object.wait(Object.java:348)
+ java.base/java.util.TimerThread.mainLoop(Timer.java:542)
+ java.base/java.util.TimerThread.run(Timer.java:521)]
+07-May-2024 10:56:18.397 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+07-May-2024 10:56:18.415 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+07-May-2024 10:56:26.817 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.88
+07-May-2024 10:56:26.830 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Apr 9 2024 13:22:30 UTC
+07-May-2024 10:56:26.831 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.88.0
+07-May-2024 10:56:26.832 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+07-May-2024 10:56:26.832 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+07-May-2024 10:56:26.833 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+07-May-2024 10:56:26.833 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\WorkSpace\JDK\jdk-22.0.1
+07-May-2024 10:56:26.835 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    22.0.1+8-16
+07-May-2024 10:56:26.835 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+07-May-2024 10:56:26.835 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 10:56:26.836 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 10:56:26.859 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+07-May-2024 10:56:26.859 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+07-May-2024 10:56:26.860 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+07-May-2024 10:56:26.860 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+07-May-2024 10:56:26.860 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-May-2024 10:56:26.860 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 10:56:26.861 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 10:56:26.861 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\WorkSpace\IdeaProjects\arvhiceSystem\temp
+07-May-2024 10:56:26.861 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\logging.properties
+07-May-2024 10:56:26.861 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2024 10:56:26.862 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\lib\idea_rt.jar=21789:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\bin
+07-May-2024 10:56:26.862 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+07-May-2024 10:56:26.862 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stdout.encoding=UTF-8
+07-May-2024 10:56:26.863 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stderr.encoding=UTF-8
+07-May-2024 10:56:26.874 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[1.3.0]。
+07-May-2024 10:56:26.875 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+07-May-2024 10:56:26.875 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+07-May-2024 10:56:26.893 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.13 30 Jan 2024]
+07-May-2024 10:56:27.821 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+07-May-2024 10:56:27.871 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[1703]毫秒内初始化
+07-May-2024 10:56:27.994 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+07-May-2024 10:56:27.995 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.88]
+07-May-2024 10:56:28.026 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]。
+07-May-2024 10:56:29.116 警告 [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion 未知版本字符串 [5.0]。将使用默认版本。
+07-May-2024 10:56:36.717 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+07-May-2024 10:56:36.911 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]的部署已在[8,880]ms内完成
+07-May-2024 10:56:36.920 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+07-May-2024 10:56:36.974 信息 [main] org.apache.catalina.startup.Catalina.start [9100]毫秒后服务器启动
+07-May-2024 13:28:59.448 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+07-May-2024 13:28:59.490 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+07-May-2024 13:29:00.179 警告 [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web应用程序 [arvhiceSystem] 注册了JDBC驱动程序 [oracle.jdbc.OracleDriver]，但在Web应用程序停止时无法注销它。 为防止内存泄漏，JDBC驱动程序已被强制取消注册。
+07-May-2024 13:29:00.195 警告 [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Web应用程序[arvhiceSystem]似乎启动了一个名为[Timer-0]的线程，但未能停止它。这很可能会造成内存泄漏。线程的堆栈跟踪：[
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:375)
+ java.base/java.lang.Object.wait(Object.java:348)
+ java.base/java.util.TimerThread.mainLoop(Timer.java:542)
+ java.base/java.util.TimerThread.run(Timer.java:521)]
+07-May-2024 13:29:00.230 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+07-May-2024 13:29:00.258 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+07-May-2024 13:29:16.407 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.88
+07-May-2024 13:29:16.417 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Apr 9 2024 13:22:30 UTC
+07-May-2024 13:29:16.417 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.88.0
+07-May-2024 13:29:16.418 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+07-May-2024 13:29:16.418 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+07-May-2024 13:29:16.418 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+07-May-2024 13:29:16.419 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\WorkSpace\JDK\jdk-22.0.1
+07-May-2024 13:29:16.419 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    22.0.1+8-16
+07-May-2024 13:29:16.420 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+07-May-2024 13:29:16.420 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 13:29:16.421 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 13:29:16.444 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+07-May-2024 13:29:16.445 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+07-May-2024 13:29:16.446 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+07-May-2024 13:29:16.447 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+07-May-2024 13:29:16.447 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-May-2024 13:29:16.447 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 13:29:16.448 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 13:29:16.448 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\WorkSpace\IdeaProjects\arvhiceSystem\temp
+07-May-2024 13:29:16.451 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\logging.properties
+07-May-2024 13:29:16.453 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2024 13:29:16.453 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\lib\idea_rt.jar=8107:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\bin
+07-May-2024 13:29:16.454 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+07-May-2024 13:29:16.454 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stdout.encoding=UTF-8
+07-May-2024 13:29:16.454 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stderr.encoding=UTF-8
+07-May-2024 13:29:16.468 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[1.3.0]。
+07-May-2024 13:29:16.468 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+07-May-2024 13:29:16.468 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+07-May-2024 13:29:16.512 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.13 30 Jan 2024]
+07-May-2024 13:29:17.857 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+07-May-2024 13:29:17.910 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[2315]毫秒内初始化
+07-May-2024 13:29:18.053 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+07-May-2024 13:29:18.054 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.88]
+07-May-2024 13:29:18.084 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]。
+07-May-2024 13:29:20.186 警告 [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion 未知版本字符串 [5.0]。将使用默认版本。
+07-May-2024 13:29:31.298 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+07-May-2024 13:29:31.534 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]的部署已在[13,443]ms内完成
+07-May-2024 13:29:31.543 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+07-May-2024 13:29:31.603 信息 [main] org.apache.catalina.startup.Catalina.start [13690]毫秒后服务器启动
+07-May-2024 13:42:40.080 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+07-May-2024 13:42:40.083 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+07-May-2024 13:42:40.173 警告 [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web应用程序 [arvhiceSystem] 注册了JDBC驱动程序 [oracle.jdbc.OracleDriver]，但在Web应用程序停止时无法注销它。 为防止内存泄漏，JDBC驱动程序已被强制取消注册。
+07-May-2024 13:42:40.174 警告 [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Web应用程序[arvhiceSystem]似乎启动了一个名为[Timer-0]的线程，但未能停止它。这很可能会造成内存泄漏。线程的堆栈跟踪：[
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:375)
+ java.base/java.lang.Object.wait(Object.java:348)
+ java.base/java.util.TimerThread.mainLoop(Timer.java:542)
+ java.base/java.util.TimerThread.run(Timer.java:521)]
+07-May-2024 13:42:40.185 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+07-May-2024 13:42:40.193 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+07-May-2024 13:42:47.748 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.88
+07-May-2024 13:42:47.758 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Apr 9 2024 13:22:30 UTC
+07-May-2024 13:42:47.759 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.88.0
+07-May-2024 13:42:47.759 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+07-May-2024 13:42:47.760 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+07-May-2024 13:42:47.760 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+07-May-2024 13:42:47.760 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\WorkSpace\JDK\jdk-22.0.1
+07-May-2024 13:42:47.760 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    22.0.1+8-16
+07-May-2024 13:42:47.761 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+07-May-2024 13:42:47.761 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 13:42:47.761 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 13:42:47.794 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+07-May-2024 13:42:47.795 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+07-May-2024 13:42:47.795 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+07-May-2024 13:42:47.796 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+07-May-2024 13:42:47.798 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-May-2024 13:42:47.799 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 13:42:47.800 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 13:42:47.801 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\WorkSpace\IdeaProjects\arvhiceSystem\temp
+07-May-2024 13:42:47.802 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\logging.properties
+07-May-2024 13:42:47.803 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2024 13:42:47.803 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\lib\idea_rt.jar=50428:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\bin
+07-May-2024 13:42:47.804 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+07-May-2024 13:42:47.805 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stdout.encoding=UTF-8
+07-May-2024 13:42:47.805 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stderr.encoding=UTF-8
+07-May-2024 13:42:47.821 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[1.3.0]。
+07-May-2024 13:42:47.822 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+07-May-2024 13:42:47.822 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+07-May-2024 13:42:47.848 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.13 30 Jan 2024]
+07-May-2024 13:42:48.976 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+07-May-2024 13:42:49.060 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[2463]毫秒内初始化
+07-May-2024 13:42:49.212 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+07-May-2024 13:42:49.212 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.88]
+07-May-2024 13:42:49.247 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]。
+07-May-2024 13:42:50.536 警告 [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion 未知版本字符串 [5.0]。将使用默认版本。
+07-May-2024 13:43:01.262 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+07-May-2024 13:43:01.505 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]的部署已在[12,253]ms内完成
+07-May-2024 13:43:01.518 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+07-May-2024 13:43:01.582 信息 [main] org.apache.catalina.startup.Catalina.start [12518]毫秒后服务器启动
+07-May-2024 13:49:53.545 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+07-May-2024 13:49:53.548 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+07-May-2024 13:49:53.703 警告 [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web应用程序 [arvhiceSystem] 注册了JDBC驱动程序 [oracle.jdbc.OracleDriver]，但在Web应用程序停止时无法注销它。 为防止内存泄漏，JDBC驱动程序已被强制取消注册。
+07-May-2024 13:49:53.704 警告 [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Web应用程序[arvhiceSystem]似乎启动了一个名为[Timer-0]的线程，但未能停止它。这很可能会造成内存泄漏。线程的堆栈跟踪：[
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:375)
+ java.base/java.lang.Object.wait(Object.java:348)
+ java.base/java.util.TimerThread.mainLoop(Timer.java:542)
+ java.base/java.util.TimerThread.run(Timer.java:521)]
+07-May-2024 13:49:53.719 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+07-May-2024 13:49:53.733 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+07-May-2024 14:37:13.045 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.88
+07-May-2024 14:37:13.070 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Apr 9 2024 13:22:30 UTC
+07-May-2024 14:37:13.075 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.88.0
+07-May-2024 14:37:13.076 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+07-May-2024 14:37:13.077 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+07-May-2024 14:37:13.077 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+07-May-2024 14:37:13.077 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\WorkSpace\JDK\jdk-22.0.1
+07-May-2024 14:37:13.078 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    22.0.1+8-16
+07-May-2024 14:37:13.078 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+07-May-2024 14:37:13.079 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 14:37:13.079 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 14:37:13.104 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+07-May-2024 14:37:13.104 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+07-May-2024 14:37:13.104 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+07-May-2024 14:37:13.105 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+07-May-2024 14:37:13.105 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-May-2024 14:37:13.105 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 14:37:13.105 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 14:37:13.106 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\WorkSpace\IdeaProjects\arvhiceSystem\temp
+07-May-2024 14:37:13.106 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\logging.properties
+07-May-2024 14:37:13.107 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2024 14:37:13.107 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\lib\idea_rt.jar=19996:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\bin
+07-May-2024 14:37:13.108 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+07-May-2024 14:37:13.108 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stdout.encoding=UTF-8
+07-May-2024 14:37:13.108 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stderr.encoding=UTF-8
+07-May-2024 14:37:13.135 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[1.3.0]。
+07-May-2024 14:37:13.136 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+07-May-2024 14:37:13.136 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+07-May-2024 14:37:13.182 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.13 30 Jan 2024]
+07-May-2024 14:37:14.218 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+07-May-2024 14:37:14.301 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[2064]毫秒内初始化
+07-May-2024 14:37:14.505 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+07-May-2024 14:37:14.506 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.88]
+07-May-2024 14:37:14.537 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]。
+07-May-2024 14:37:17.672 警告 [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion 未知版本字符串 [5.0]。将使用默认版本。
+07-May-2024 14:37:27.319 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+07-May-2024 14:37:27.539 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]的部署已在[12,998]ms内完成
+07-May-2024 14:37:27.547 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+07-May-2024 14:37:27.614 信息 [main] org.apache.catalina.startup.Catalina.start [13310]毫秒后服务器启动
+07-May-2024 14:40:15.002 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+07-May-2024 14:40:15.005 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+07-May-2024 14:40:15.128 警告 [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web应用程序 [arvhiceSystem] 注册了JDBC驱动程序 [oracle.jdbc.OracleDriver]，但在Web应用程序停止时无法注销它。 为防止内存泄漏，JDBC驱动程序已被强制取消注册。
+07-May-2024 14:40:15.128 警告 [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Web应用程序[arvhiceSystem]似乎启动了一个名为[Timer-0]的线程，但未能停止它。这很可能会造成内存泄漏。线程的堆栈跟踪：[
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:375)
+ java.base/java.lang.Object.wait(Object.java:348)
+ java.base/java.util.TimerThread.mainLoop(Timer.java:542)
+ java.base/java.util.TimerThread.run(Timer.java:521)]
+07-May-2024 14:40:15.139 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+07-May-2024 14:40:15.156 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+07-May-2024 14:40:22.174 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.88
+07-May-2024 14:40:22.190 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Apr 9 2024 13:22:30 UTC
+07-May-2024 14:40:22.191 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.88.0
+07-May-2024 14:40:22.192 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+07-May-2024 14:40:22.193 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+07-May-2024 14:40:22.193 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+07-May-2024 14:40:22.194 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\WorkSpace\JDK\jdk-22.0.1
+07-May-2024 14:40:22.194 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    22.0.1+8-16
+07-May-2024 14:40:22.194 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+07-May-2024 14:40:22.195 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 14:40:22.195 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 14:40:22.237 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+07-May-2024 14:40:22.237 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+07-May-2024 14:40:22.237 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+07-May-2024 14:40:22.238 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+07-May-2024 14:40:22.238 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-May-2024 14:40:22.238 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 14:40:22.239 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 14:40:22.239 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\WorkSpace\IdeaProjects\arvhiceSystem\temp
+07-May-2024 14:40:22.239 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\logging.properties
+07-May-2024 14:40:22.240 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2024 14:40:22.240 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\lib\idea_rt.jar=56616:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\bin
+07-May-2024 14:40:22.241 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+07-May-2024 14:40:22.241 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stdout.encoding=UTF-8
+07-May-2024 14:40:22.242 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stderr.encoding=UTF-8
+07-May-2024 14:40:22.260 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[1.3.0]。
+07-May-2024 14:40:22.260 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+07-May-2024 14:40:22.261 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+07-May-2024 14:40:22.292 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.13 30 Jan 2024]
+07-May-2024 14:40:23.417 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+07-May-2024 14:40:23.457 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[2140]毫秒内初始化
+07-May-2024 14:40:23.595 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+07-May-2024 14:40:23.595 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.88]
+07-May-2024 14:40:23.624 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]。
+07-May-2024 14:40:24.696 警告 [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion 未知版本字符串 [5.0]。将使用默认版本。
+07-May-2024 14:40:33.739 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+07-May-2024 14:40:33.933 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]的部署已在[10,305]ms内完成
+07-May-2024 14:40:33.941 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+07-May-2024 14:40:33.990 信息 [main] org.apache.catalina.startup.Catalina.start [10528]毫秒后服务器启动
+07-May-2024 14:46:36.722 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+07-May-2024 14:46:36.725 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+07-May-2024 14:46:36.785 警告 [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web应用程序 [arvhiceSystem] 注册了JDBC驱动程序 [oracle.jdbc.OracleDriver]，但在Web应用程序停止时无法注销它。 为防止内存泄漏，JDBC驱动程序已被强制取消注册。
+07-May-2024 14:46:36.786 警告 [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Web应用程序[arvhiceSystem]似乎启动了一个名为[Timer-0]的线程，但未能停止它。这很可能会造成内存泄漏。线程的堆栈跟踪：[
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:375)
+ java.base/java.lang.Object.wait(Object.java:348)
+ java.base/java.util.TimerThread.mainLoop(Timer.java:542)
+ java.base/java.util.TimerThread.run(Timer.java:521)]
+07-May-2024 14:46:36.798 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+07-May-2024 14:46:36.802 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+07-May-2024 14:46:55.674 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.88
+07-May-2024 14:46:55.684 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Apr 9 2024 13:22:30 UTC
+07-May-2024 14:46:55.684 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.88.0
+07-May-2024 14:46:55.685 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+07-May-2024 14:46:55.685 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+07-May-2024 14:46:55.685 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+07-May-2024 14:46:55.686 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\WorkSpace\JDK\jdk-22.0.1
+07-May-2024 14:46:55.686 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    22.0.1+8-16
+07-May-2024 14:46:55.686 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+07-May-2024 14:46:55.686 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 14:46:55.687 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 14:46:55.709 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+07-May-2024 14:46:55.709 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+07-May-2024 14:46:55.710 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+07-May-2024 14:46:55.710 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+07-May-2024 14:46:55.710 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-May-2024 14:46:55.711 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:28133,suspend=y,server=n
+07-May-2024 14:46:55.711 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 14:46:55.712 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 14:46:55.712 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\WorkSpace\IdeaProjects\arvhiceSystem\temp
+07-May-2024 14:46:55.712 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\logging.properties
+07-May-2024 14:46:55.713 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2024 14:46:55.713 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:C:\Users\Admin\AppData\Local\JetBrains\IntelliJIdea2024.1\captureAgent\debugger-agent.jar
+07-May-2024 14:46:55.713 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+07-May-2024 14:46:55.713 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stdout.encoding=UTF-8
+07-May-2024 14:46:55.714 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stderr.encoding=UTF-8
+07-May-2024 14:46:55.723 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[1.3.0]。
+07-May-2024 14:46:55.724 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+07-May-2024 14:46:55.724 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+07-May-2024 14:46:55.753 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.13 30 Jan 2024]
+07-May-2024 14:46:56.667 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+07-May-2024 14:46:56.720 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[2305]毫秒内初始化
+07-May-2024 14:46:56.845 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+07-May-2024 14:46:56.846 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.88]
+07-May-2024 14:46:56.881 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]。
+07-May-2024 14:46:57.869 警告 [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion 未知版本字符串 [5.0]。将使用默认版本。
+07-May-2024 14:47:06.753 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+07-May-2024 14:47:06.978 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]的部署已在[10,091]ms内完成
+07-May-2024 14:47:06.989 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+07-May-2024 14:47:07.060 信息 [main] org.apache.catalina.startup.Catalina.start [10336]毫秒后服务器启动
+07-May-2024 14:55:36.598 信息 [Thread-1] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+07-May-2024 14:55:36.601 信息 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+07-May-2024 14:55:36.750 警告 [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web应用程序 [arvhiceSystem] 注册了JDBC驱动程序 [oracle.jdbc.OracleDriver]，但在Web应用程序停止时无法注销它。 为防止内存泄漏，JDBC驱动程序已被强制取消注册。
+07-May-2024 14:55:36.751 警告 [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Web应用程序[arvhiceSystem]似乎启动了一个名为[Timer-0]的线程，但未能停止它。这很可能会造成内存泄漏。线程的堆栈跟踪：[
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:375)
+ java.base/java.lang.Object.wait(Object.java:348)
+ java.base/java.util.TimerThread.mainLoop(Timer.java:542)
+ java.base/java.util.TimerThread.run(Timer.java:521)]
+07-May-2024 14:55:36.768 信息 [Thread-1] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+07-May-2024 14:55:36.777 信息 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+07-May-2024 15:04:15.334 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.88
+07-May-2024 15:04:15.352 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Apr 9 2024 13:22:30 UTC
+07-May-2024 15:04:15.353 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.88.0
+07-May-2024 15:04:15.354 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+07-May-2024 15:04:15.354 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+07-May-2024 15:04:15.354 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+07-May-2024 15:04:15.355 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\WorkSpace\JDK\jdk-22.0.1
+07-May-2024 15:04:15.357 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    22.0.1+8-16
+07-May-2024 15:04:15.358 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+07-May-2024 15:04:15.359 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 15:04:15.360 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 15:04:15.403 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+07-May-2024 15:04:15.404 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+07-May-2024 15:04:15.404 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+07-May-2024 15:04:15.405 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+07-May-2024 15:04:15.405 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-May-2024 15:04:15.405 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\tomcat\apache-tomcat-9.0.88
+07-May-2024 15:04:15.406 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\WorkSpace\IdeaProjects\arvhiceSystem
+07-May-2024 15:04:15.406 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\WorkSpace\IdeaProjects\arvhiceSystem\temp
+07-May-2024 15:04:15.407 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\logging.properties
+07-May-2024 15:04:15.407 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2024 15:04:15.408 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -javaagent:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\lib\idea_rt.jar=15683:C:\Users\Admin\AppData\Local\Programs\IntelliJ IDEA Ultimate 2024.1\bin
+07-May-2024 15:04:15.409 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dfile.encoding=UTF-8
+07-May-2024 15:04:15.412 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stdout.encoding=UTF-8
+07-May-2024 15:04:15.413 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dsun.stderr.encoding=UTF-8
+07-May-2024 15:04:15.438 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.4]加载了基于APR的Apache Tomcat本机库[1.3.0]。
+07-May-2024 15:04:15.439 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+07-May-2024 15:04:15.439 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+07-May-2024 15:04:15.497 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.0.13 30 Jan 2024]
+07-May-2024 15:04:16.695 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+07-May-2024 15:04:16.754 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[2393]毫秒内初始化
+07-May-2024 15:04:16.894 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+07-May-2024 15:04:16.895 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.88]
+07-May-2024 15:04:16.933 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]。
+07-May-2024 15:04:18.151 警告 [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion 未知版本字符串 [5.0]。将使用默认版本。
+07-May-2024 15:04:27.863 信息 [main] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+07-May-2024 15:04:28.065 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\WorkSpace\IdeaProjects\arvhiceSystem\conf\Catalina\localhost\arvhiceSystem.xml]的部署已在[11,128]ms内完成
+07-May-2024 15:04:28.074 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+07-May-2024 15:04:28.129 信息 [main] org.apache.catalina.startup.Catalina.start [11371]毫秒后服务器启动
